@@ -7,17 +7,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="icon" href="assets/img/favicon/ico">
+	<link rel="icon" href="assets/img/favicon.ico">
 
 	<title>Bootstrap to Wordpress</title>
 
+	<!-- Bootstrap core css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- custom CSS -->
+	<link rel="stylesheet" href="assets/css/custom.css">
+
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
 
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-	
 
+
+	<script>
+	// $('#myModal').appendTo("body");
+	</script>	
 
 	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries --> 
 
@@ -29,22 +38,145 @@
 
 </head>
 <body>
-	<header>
+	<!-- HEADER -->
+	<header class="site-header" role="banner">
+		<!-- navbar -->
+		<div class="navbar-wrapper">
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target= ".navbar-collapse">
+							<span class="sr-only">Toogle navigation</span>
+							<span class="icon-bar"></span>	
+							<span class="icon-bar"></span>	
+							<span class="icon-bar"></span>	
+						</button>
+						<a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="Bootstrap to Wordpress"></a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="/">Home</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>						
+					</div>
+				</div>
+				
+			</div>
+		</div> 
 		
 	</header>
 	
 
 	<!-- HERO -->
-	<section></section>
+	<section id="hero" data-type="background" data-speed="5">
+		<article>
+			<div class="container clearfix">
+				<div class="row">
+					<div class="col-sm-5">
+						<img src="assets/img/logo-badge.png" alt="Bootstrap to Wordpress" class="logo">
+					</div>
+					<div class="col-sm-7 hero-text">
+						<h1>Bootstrap to wordpress</h1>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel necessitatibus error incidunt reprehenderit consequuntur, rerum! </p>
+						<div id="price-timeline">
+							<div class="price active">
+								<h4>Pre-Launch price <small>Ends soon!</small></h4>
+								<span>R$149</span>
+							</div>
+							<div class="price">
+								<h4>Launch price <small>Coming soon!</small></h4>
+								<span>R$299</span>
+							</div>
+							<div class="price">
+								<h4>Final price <small>Coming soon!</small></h4>
+								<span>R$399</span>
+							</div>
+						</div>
+						<p><a class="btn btn-lg btn-danger" href="/" role="button">Enroll &raquo;</a></p>
+							
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
 
 	<!-- OPT IN SECTION -->
-	<section></section>
+	<section id="optin">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<p class="lead"><strong>Subscribe to our mailing list</strong> We'll send something special as a thank you</p>
+				</div>
+				<div class="col-sm-4">
+					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+					Click here to subscribe</button>
+				</div>
+			</div>
+		</div>
+
+	</section>
 
 	<!-- BOOST YOUR INCOME -->
-	<section></section>
+	<section id="boost-income">
+		<div class="container">
+			<div class="section-header">
+				<img src="assets/img/icon-boost.png" alt="Chart">
+				<h2>How to boost you income</h2>
+			</div>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus cum ab atque voluptas cumque ex quaerat vero rem illo! Voluptatibus, placeat! Modi, vitae asperiores aperiam labore quia ratione architecto et.</p>
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Make money on the side</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vel a eaque exercitationem corporis molestias veniam doloremque! Rem hic perspiciatis voluptatem aliquid eos magni quam reprehenderit, sequi expedita nobis. Repudiandae.</p>
+			</div>
+			<div class="col-sm-6">
+				<h3>Create a full-time income</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi incidunt odio officiis maxime, laboriosam atque laudantium in magni quis voluptas temporibus numquam saepe quisquam necessitatibus fugit, culpa ea, fugiat sapiente.</p>
+			</div>
+		</div>
+
+		</div>
+
+		
+	</section>
+
 
 	<!-- WHO BENEFITS -->
-	<section></section>
+	<section id="who-benefits">
+		<div class="container">
+			<div class="section-header">
+				<img src="assets/img/icon-pad.png" alt="Pad and pencil">
+				<h2>How should take this course!</h2>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<h3>Graphics &amp; Web Designers</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis voluptatem commodi ratione doloribus quo aliquam illo accusantium earum veritatis delectus recusandae nostrum, porro, aliquid sit deleniti perspiciatis dolores eius.</p>
+					<p>Lorem ipsum dolor sit amet,<strong>Let's make some money bicth</strong> consectetur adipisicing elit. Nisi alias maiores dignissimos natus explicabo saepe rem inventore, odit enim, ratione. Cumque vitae itaque, commodi quis fugit, animi laborum autem facilis.</p>
+
+					<h3>Enterprenuers</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis voluptatem commodi ratione doloribus quo aliquam illo accusantium earum veritatis delectus recusandae nostrum, porro, aliquid sit deleniti perspiciatis dolores eius.</p>
+					<p>Lorem ipsum dolor sit amet,<strong>Let's make some money bicth</strong> consectetur adipisicing elit. Nisi alias maiores dignissimos natus explicabo saepe rem inventore, odit enim, ratione. Cumque vitae itaque, commodi quis fugit, animi laborum autem facilis.</p>
+
+					<h3>Employees</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis voluptatem commodi ratione doloribus quo aliquam illo accusantium earum veritatis delectus recusandae nostrum, porro, aliquid sit deleniti perspiciatis dolores eius.</p>
+					<p>Lorem ipsum dolor sit amet,<strong>Let's make some money bicth</strong> consectetur adipisicing elit. Nisi alias maiores dignissimos natus explicabo saepe rem inventore, odit enim, ratione. Cumque vitae itaque, commodi quis fugit, animi laborum autem facilis.</p>
+
+					<h3>Code Hobbyists</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis voluptatem commodi ratione doloribus quo aliquam illo accusantium earum veritatis delectus recusandae nostrum, porro, aliquid sit deleniti perspiciatis dolores eius.</p>
+					<p>Lorem ipsum dolor sit amet,<strong>Let's make some money bicth</strong> consectetur adipisicing elit. Nisi alias maiores dignissimos natus explicabo saepe rem inventore, odit enim, ratione. Cumque vitae itaque, commodi quis fugit, animi laborum autem facilis.</p>
+
+					<h3>People who're looking for a new carrer</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis voluptatem commodi ratione doloribus quo aliquam illo accusantium earum veritatis delectus recusandae nostrum, porro, aliquid sit deleniti perspiciatis dolores eius.</p>
+					<p>Lorem ipsum dolor sit amet,<strong>Let's make some money bicth</strong> consectetur adipisicing elit. Nisi alias maiores dignissimos natus explicabo saepe rem inventore, odit enim, ratione. Cumque vitae itaque, commodi quis fugit, animi laborum autem facilis.</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
 
 	<!-- COURSE FEATURES -->
 	<section></section>
@@ -72,16 +204,22 @@
 
 	</footer>
 
-	<!-- MODAL -->
-	<div></div>
+
+
 
 
 <!-- bootstrap core javascript 
 Placed at the end of the document so the pages load faster!
 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="assets/js/jquery-2.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="assets/js/main.js"></script>
+
+
+
+
+
 
 <!-- TypeKit Fonts -->
 <script src="//use.typekit.net/fod0cbg.js"></script>
@@ -90,4 +228,43 @@ Placed at the end of the document so the pages load faster!
 
 
 </body>
+
+
+	<!-- MODAL
+	================================================== -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+						<h4 class="modal-title" id="myModalLabel">
+							<i class="fa fa-envelope"></i>
+							Subscribe to our malling list
+						</h4>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quod laudantium quis neque accusamus voluptas, consequuntur ipsa optio, eveniet. <em> Fuga nam delectus dolore impedit soluta </em>possimus consectetur ut ipsum minus.</p>
+					
+					<form action="" class="form-inline" role="form">
+						<div class="form-group">
+							<label for="subscribe-name" class="sr-only">First name</label>
+							<input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
+						</div>
+						<div class="form-group">
+							<label for="subscribe-email" class="sr-only">Email</label>
+							<input type="text" class="form-control" id="subscribe-email" placeholder="Your email">
+						</div>
+						<input type="submit" name="" id="" class="btn btn-danger">
+						<hr>
+						<p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Cumque ipsum blanditiis esse tempore eius et reiciendis doloremque odit non, deserunt animi aspernatur illum libero asperiores facere soluta culpa, voluptatibus perspiciatis?</small></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> 	
+
+
 </html>
